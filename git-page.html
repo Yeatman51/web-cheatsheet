@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="css-page.html">CSS</a></li>
+        <li><a href="java-script-page.html">JavaScript</a></li>
+        <li><a href="git-page.html">Github</a></li>
+      </ul>
+    <header>
+       <h1 class="page-title">
+      GitHub Cheatsheet
+    </h1>
+    <p>
+      Ever have trouble recalling the exact syntax for your favorite HTML code? Give it a permanent home and add it to
+      this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+    </p>
+  </header>
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#git-configuration">Git Configuration</a>
+      <a href="#setting-project-folder">Setting up a Project Folder</a>
+      <a href="#git-colne">Git Clone</a>
+      <a href="#git-touch">Git-Touch</a>
+      <a href="#git-commit">Git-Commit</a>
+      <a href="#git-push">Git-Push</a>
+      
+      
+    </div>
+  </div>
+
+  <main>
+    <section class="row justify-center">
+
+<!-- Git Configuration -->
+        <div id="git-configuration" class="card-column">
+            <figure class="card code-card">
+            <h2 class="card-header">Git Configuration</h2>
+            <div class="card-body">
+                <p>This is used to configure initial get hub account and start up.</p>
+            </div>
+            <pre class="code-block"><code>
+git version
+git config --global user.name "Abe Lincoln"
+git config --global user.email "mrabe@git.training" 
+git config --global --list
+    </code></pre>
+            </figure>
+        </div>
+
+<!-- Setting up a Project Folder -->
+              <div id="setting-project-folder" class="card-column">
+                <figure class="card code-card">
+                  <h2 class="card-header">Setting up a Project Folder</h2>
+                  <div class="card-body">
+                    <p>Command listing</p>
+                  </div>
+                  <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+                  <pre class="code-block"><code>
+            pwd
+            mkdir project-name
+            cd project-name
+            pwd
+            </code></pre>
+                </figure>
+              </div>
+
+<!-- Copy the Repository (clone) -->
+            <div id="git-colne" class="card-column">
+                <figure class="card code-card">
+                <h2 class="card-header">Git Clone</h2>
+                <div class="card-body">
+                    <p>Copy the Repository (clone)</p>
+                </div>
+                <pre class="code-block"><code>
+        
+    git clone (paste in your GitHub HTTPS clone URL)
+    ls
+    cd to the new file
+    ls
+    git status
+            </code></pre>
+                </figure>
+            </div>
+
+<!-- Git Touch -->
+            <div id="git-touch" class="card-column">
+                <figure class="card code-card">
+                <h2 class="card-header">Git Touch</h2>
+                <div class="card-body">
+                    <p>Touch is the get command to create a new 
+                        page within a folder</p>
+                </div>
+                <pre class="code-block"><code>
+        
+    git touch index.html
+    
+            </code></pre>
+                </figure>
+            </div>
+
+<!-- Git Commit -->
+            <div id="git-commit" class="card-column">
+                <figure class="card code-card">
+                <h2 class="card-header">Git Commit</h2>
+                <div class="card-body">
+                    <p>You must add then commit and remember to comment before 
+                        pushing The files to get Github</p>
+                </div>
+                <pre class="code-block"><code>
+    git status
+    git add start.txt   or
+    git add -A      (all files)
+    git status
+    git commit -m "Adding text to file" 
+    git status
+            </code></pre>
+                </figure>
+            </div>
+
+<!-- Git Push -->
+            <div id="git-push" class="card-column">
+                <figure class="card code-card">
+                <h2 class="card-header">Git Push</h2>
+                <div class="card-body">
+                    <p>I'll remember to pull before pushing to 
+                        identify any merge conflicts</p>
+                </div>
+                <pre class="code-block"><code>
+        git push
+            </code></pre>
+                </figure>
+            </div>
+
+
+    </section>
+  </main>
+
+
+</body>
+</html>
