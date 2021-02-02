@@ -25,26 +25,104 @@
       this page! Select any snippet below and it'll automatically select all of the code for you to copy.
     </p>
   </header>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#h1-h6">H1-H6</a>
+      <a href="#p">P</a>
+      <a href="#link-css">Link to CSS</a>
+      <a href="#img">IMG</a>
+      <a href="#links">Links</a>
+      <a href="#git-push">Git-Push</a>
+    </div>
+  </div>
 
   <main>
     <section class="row justify-center">
-        <!-- Flexbox Row -->
-              <div id="flexbox-row" class="card-column">
+        
+        <!-- H1-H6 -->
+              <div id="h1-h6" class="card-column">
                 <figure class="card code-card">
-                  <h2 class="card-header">Flexbox Row</h2>
+                  <h2 class="card-header">H1-H6</h2>
                   <div class="card-body">
-                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <p>The H1 tag is used to create headings on the page</p>
                   </div>
                   <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
-                  <pre class="code-block"><code>.row {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }</code></pre>
+                  <pre class="code-block"><code>
+            &lt;h1&gt; &lt;/h1&gt;
+            &lt;h2&gt; &lt;/h2&gt;
+            &lt;h3&gt; &lt;/h3&gt;
+            &lt;h4&gt; &lt;/h4&gt;
+            &lt;h5&gt; &lt;/h5&gt;
+            &lt;h6&gt; &lt;/h6&gt;
+        </code></pre>
                 </figure>
               </div>
 
+<!-- P -->
+        <div id="p" class="card-column">
+            <figure class="card code-card">
+            <h2 class="card-header">P</h2>
+            <div class="card-body">
+                <p>The P tag is used to create paragraphs <br>
+                Don't forget about BR to use as a line break</p>
+            </div>
+            <pre class="code-block"><code> 
+&lt;p&gt;
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;br&gt; 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;/p&gt;
+</code></pre>
+            </figure>
+        </div>
 
+<!-- link CSS -->
+        <div id="link-css" class="card-column">
+            <figure class="card code-card">
+              <h2 class="card-header">Link to CSS</h2>
+              <div class="card-body">
+                <p>This is how you would link to your CSS File</p>
+              </div>
+              <pre class="code-block"><code>
+&lt;link rel="stylesheet" 
+href="./assets/css/style.css"/&gt;
+    </code></pre>
+            </figure>
+          </div>
+
+<!-- IMG -->
+        <div id="img" class="card-column">
+            <figure class="card code-card">
+              <h2 class="card-header">IMG</h2>
+              <div class="card-body">
+                <p>Remember when linking images to include 
+                    alt text for accessibility (screen readers)</p>
+              </div>              
+              <pre class="code-block"><code>
+&lt;img src="img_girl.jpg" 
+alt="Girl in a jacket" 
+width="500" height="600"&gt;       
+    </code></pre>
+            </figure>
+          </div>
+
+          <!-- Links -->
+        <div id="links" class="card-column">
+            <figure class="card code-card">
+              <h2 class="card-header">Links</h2>
+              <div class="card-body">
+                <p>The a tag allows it to be anchored to one position <br>
+                The href Hyper reference <br>
+            Don't forget the display text at the end</p>
+              </div>              
+              <pre class="code-block"><code>
+&lt;a href="url">display text&lt;/a&gt;       
+    </code></pre>
+            </figure>
+          </div>
+             
+
+    </section>
   </main>
 
 
