@@ -18,36 +18,67 @@
   }
 
   /* Top NAV bar menu */
-  ul.navbar {
+  .navbar {
     list-style-type: none;
     margin-bottom: 15px;
     padding: 0;
+    border-radius: 15px;
     overflow: hidden;
     width: 100%;
-    display: inline-block;
+    display: block;
+  
     background-image: linear-gradient(
       var(--heliotrope) 0%,
       rgba(46, 226, 217, 0.884) 100%
     );
   }
   
-  li {
-    float: left;
-  }
   
-  li a {
-    clear: both;
+  .navbar a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
+    border-radius: 13px;
     text-decoration: none;
+    float: left;
+  }
+
+  .navbar input {
+    clear: both;
+    float: right;
+    width: auto;
+    padding: 6px;
+    border: none;
+    border-radius: 13px;
+    /* margin-top: 8px; */
+    /* margin-right: 16px; */
+    font-size: 17px;
+  }
+
+  #myInput {
+    border-radius: 13px;
+    clear: both;
+    float: right;
+    width: 100%;
+    /* position: absolute; */
+    
+  }
+
+  .search-bar-right {
+    float: right;
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  .navbar a:hover {
     background-color: var(--outer-space);
   }
+
+  /* Style the "active" element to highlight the current page */
+.navbar a.active {
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+}
 
   /* Dropdown Button */
   .dropbtn {
@@ -71,6 +102,7 @@
     position: relative;
     display: inline-block;
     margin-left: 20px;
+    z-index: 1;
   }
   
   /* Dropdown Content (Hidden by Default) */
