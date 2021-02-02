@@ -36,6 +36,7 @@
   }
   
   li a {
+    clear: both;
     display: block;
     color: white;
     text-align: center;
@@ -276,6 +277,19 @@
   /* on <pre> click, select all contents so the code is highlighted */
   .code-card pre:active {
     user-select: all;
+  }
+
+  #myInput {
+    
+    width: 100%; /* Full-width */
+    font-size: 18px; /* Increase font-size */
+    padding: 10px 20px 10px 40px; /* Add some padding */
+    background-color: var(--outer-space);
+    color: var(--gin);
+    border: 1px solid #ddd; /* Add a grey border */
+    margin: 5px; /* Add some space below the input */
+    margin-left: 25px;
+    
   }
   
   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
