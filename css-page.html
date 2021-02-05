@@ -36,6 +36,7 @@
       <a href="#css-variables">CSS Variables</a>
       <a href="#margin">Margin</a>
       <a href="#padding">Padding</a>
+      <a href="#background-image">Background Image</a>
       <a href="#flexbox-row">Flexbox Row</a>
       <a href="#flexbox-column">Flexbox Column</a>
       <a href="#grid-layout">CSS Grid Layout</a>
@@ -65,13 +66,12 @@
           the same colors over and over again, you can place them in variables.
         </p>
       </div>
-      <pre class="code-block"><code> 
-  :root {
+      <pre class="code-block"><code>:root {
     --blue: #1e90ff;
     --white: #ffffff;
     }
 
-  .container {
+.container {
     color: var(--blue);
     background-color: var(--white);
     padding: 15px;
@@ -79,7 +79,7 @@
     </figure>
   </div>
 
-  <!-- Margin -->
+<!-- Margin -->
   <div id="margin" class="card-column">
     <figure class="card code-card">
       <h2 class="card-header">Margin</h2>
@@ -91,12 +91,11 @@
           left margin is 100px <br>
         </p>
       </div>
-      <pre class="code-block"><code> 
-  p {
+      <pre class="code-block"><code>p {
     margin: 25px 50px 75px 100px;
     }
 
-  p {
+p {
     margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 150px;
@@ -105,29 +104,51 @@
     </figure>
   </div>
 
-  <!-- Padding -->
+<!-- Padding -->
     <div id="padding" class="card-column">
       <figure class="card code-card">
         <h2 class="card-header">Padding</h2>
         <div class="card-body">
           <p>margin: 25px 50px 75px 100px;<br>
-            top margin is 25px <br>
-            right margin is 50px <br>
-            bottom margin is 75px <br>
-            left margin is 100px <br>
+            top padding is 25px <br>
+            right padding is 50px <br>
+            bottom padding is 75px <br>
+            left padding is 100px <br>
           </p>
         </div>
-        <pre class="code-block"><code> 
-    p {
-      margin: 25px 50px 75px 100px;
+        <pre class="code-block"><code>div {
+      padding: 25px 50px 75px 100px;
       }
   
-    p {
-      margin-top: 100px;
-      margin-bottom: 100px;
-      margin-right: 150px;
-      margin-left: 80px;
+div {
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
       }</code></pre>
+      </figure>
+    </div>
+
+<!-- Background Image -->
+    <div id="background-image" class="card-column">
+      <figure class="card code-card">
+        <h2 class="card-header">Background Image</h2>
+        <div class="card-body">
+          <p>margin: 25px 50px 75px 100px;<br>
+            top padding is 25px <br>
+            right padding is 50px <br>
+            bottom padding is 75px <br>
+            left padding is 100px <br>
+          </p>
+        </div>
+        <pre class="code-block"><code>.hero-image {
+    background-image: url("photographer.jpg"); 
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    }</code></pre>
       </figure>
     </div>
 

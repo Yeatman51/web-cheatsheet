@@ -30,24 +30,66 @@
     </p>
   </header>
 
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#js-script">HTML link to JavaScript</a>
+      <a href="#js-variables">JavaScript Variables</a>
+      <a href="#console-log">Console Log</a>
+      <a href="#">C</a>
+      <a href="#">C</a>
+      <a href="#">C</a>
+     
+      
+    </div>
+  </div>
+
   <main>
     <section class="row justify-center">
-        <!-- Flexbox Row -->
-              <div id="flexbox-row" class="card-column">
-                <figure class="card code-card">
-                  <h2 class="card-header">JS</h2>
-                  <div class="card-body">
-                    <p>Use these three properties to create a Flexbox row layout.</p>
-                  </div>
-                  <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
-                  <pre class="code-block"><code>.row {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }</code></pre>
-                </figure>
-              </div>
 
+<!-- HTML link to JavaScript -->
+<div id="js-script" class="card-column">
+  <figure class="card code-card">
+    <h2 class="card-header">HTML link to JavaScript</h2>
+    <div class="card-body">
+      <p>This is how you link to your JavaScript file inside HTML
+      </p>
+    </div>
+    <pre class="code-block"><code>&lt;script src="script.js"&gt;&lt;/script&gt;
+  </code></pre>
+  </figure>
+</div>
+
+<!-- JavaScript Variables -->
+<div id="js-variables" class="card-column">
+  <figure class="card code-card">
+    <h2 class="card-header">JavaScript Variables</h2>
+    <div class="card-body">
+      <p>In JavaScript, the equal sign (=) is an "assignment" operator, 
+        not an "equal to" operator.
+      </p>
+    </div>
+    <pre class="code-block"><code>var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+  </code></pre>
+  </figure>
+</div>
+
+<!-- console.log -->
+  <div id="console-log" class="card-column">
+    <figure class="card code-card">
+      <h2 class="card-header">Console Log</h2>
+      <div class="card-body">
+        <p>The console.log() method writes a message to the console. <br>
+          The console is useful for testing purposes.
+        </p>
+      </div>
+      <pre class="code-block"><code>var myArr = ["Orange", "Banana", "Mango", "Kiwi" ];
+console.log(myArr);
+</code></pre>
+    </figure>
+  </div>
 
   </main>
 
