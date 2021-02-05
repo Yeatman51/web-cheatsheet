@@ -33,6 +33,9 @@
   <div class="dropdown">
     <button class="dropbtn">Dropdown</button>
     <div class="dropdown-content">
+      <a href="#css-variables">CSS Variables</a>
+      <a href="#margin">Margin</a>
+      <a href="#padding">Padding</a>
       <a href="#flexbox-row">Flexbox Row</a>
       <a href="#flexbox-column">Flexbox Column</a>
       <a href="#grid-layout">CSS Grid Layout</a>
@@ -43,12 +46,91 @@
       <a href="#border-radius">Border Radius</a>
       <a href="#float">Float</a>
       <a href="#hover">Hover</a>
-      <a href="#">CSS</a>
+      <a href="#custom-font">Custom Font</a>
+      <a href="#media-queries">Media Queries</a>
+      
     </div>
   </div>
 
   <main>
     <section class="row justify-center">
+
+<!-- CSS Variables -->
+  <div id="css-variables" class="card-column">
+    <figure class="card code-card">
+      <h2 class="card-header">CSS Variables</h2>
+      <div class="card-body">
+        <p>A good way to use CSS variables is when it comes to the colors 
+          of your design. Instead of copy and paste 
+          the same colors over and over again, you can place them in variables.
+        </p>
+      </div>
+      <pre class="code-block"><code> 
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    }
+
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+    }</code></pre>
+    </figure>
+  </div>
+
+  <!-- Margin -->
+  <div id="margin" class="card-column">
+    <figure class="card code-card">
+      <h2 class="card-header">Margin</h2>
+      <div class="card-body">
+        <p>margin: 25px 50px 75px 100px;<br>
+          top margin is 25px <br>
+          right margin is 50px <br>
+          bottom margin is 75px <br>
+          left margin is 100px <br>
+        </p>
+      </div>
+      <pre class="code-block"><code> 
+  p {
+    margin: 25px 50px 75px 100px;
+    }
+
+  p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    }</code></pre>
+    </figure>
+  </div>
+
+  <!-- Padding -->
+    <div id="padding" class="card-column">
+      <figure class="card code-card">
+        <h2 class="card-header">Padding</h2>
+        <div class="card-body">
+          <p>margin: 25px 50px 75px 100px;<br>
+            top margin is 25px <br>
+            right margin is 50px <br>
+            bottom margin is 75px <br>
+            left margin is 100px <br>
+          </p>
+        </div>
+        <pre class="code-block"><code> 
+    p {
+      margin: 25px 50px 75px 100px;
+      }
+  
+    p {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+      }</code></pre>
+      </figure>
+    </div>
+
 <!-- Flexbox Row -->
       <div id="flexbox-row" class="card-column">
         <figure class="card code-card">
@@ -226,6 +308,50 @@ a:hover {
   </figure>
 </div>
 
+<!-- Custom Font -->
+<div id="custom-font" class="card-column">
+  <figure class="card code-card">
+    <h2 class="card-header">Custom Font</h2>
+    <div class="card-body">
+      <p>Find face will allow you to define the name of your custom font and then src: to the file location.
+      </p>
+    </div>
+    <pre class="code-block"><code>@font-face {
+      font-family: 'digital-7';
+      src: url(digital-7-mono.ttf);
+    }
+  
+  body {
+      font-family: digital-7;
+      color: white;
+  }</code></pre>
+  </figure>
+</div>
+
+<!-- Media Queries -->
+<div id="media-queries" class="card-column">
+  <figure class="card code-card">
+    <h2 class="card-header">Media Queries</h2>
+    <div class="card-body">
+      <p>media query is Used to establish different parameters when 
+        the browser window is sized differently
+      </p>
+    </div>
+    <pre class="code-block"><code> 
+    /* media query for larger screens */
+    @media screen and (min-width: 992px) {
+        header {
+          width: 75%;
+        }
+      
+        .card-column {
+          flex: 0 0 33.333%;
+          max-width: 33.333%;
+        }
+      }
+</code></pre>
+  </figure>
+</div>
 
     </section>
   </main>
