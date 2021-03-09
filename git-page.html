@@ -41,6 +41,7 @@
       <a href="#git-push">Git-Push</a>
       <a href="#git-check-out">Git-Checkout</a>
       <a href="#git-branch-marge">Git-Marge</a>
+      <a href="git-marge-update-branch">Marge Main with Branch</a>
       <a href="#branch-delete">Branch Delete</a>
     </div>
   </div>
@@ -180,6 +181,30 @@ git config --global --list
             </code></pre>
                 </figure>
             </div>
+
+<!-- Git Merge Update Existing Branch -->
+            <div id="git-marge-update-branch" class="card-column">
+                <figure class="card code-card">
+                <h2 class="card-header">Marge Main with Working Branch</h2>
+                <div class="card-body">
+                    <p>
+                        The steps to update your main branch and then take those updates 
+                        and put them in your work in branch.
+                        <a class="cheat-sheet" href="./assets/img/git-merge-cheat-sheet.png">
+                            Click here for the full Cheat Sheet</a>
+                    </p>
+                </div>
+                <pre class="code-block"><code>
+
+    git checkout main
+    git pull
+    git checkout &lt;branch-name&gt;
+    git merge main
+    git add -A
+    git commit -m "merge complete"
+                </code></pre>
+                    </figure>
+                </div>
 
 <!-- Branch Delete -->
             <div id="branch-delete" class="card-column">
