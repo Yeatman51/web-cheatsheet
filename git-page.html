@@ -41,7 +41,8 @@
       <a href="#git-push">Git-Push</a>
       <a href="#git-check-out">Git-Checkout</a>
       <a href="#git-branch-marge">Git-Marge</a>
-      <a href="git-marge-update-branch">Marge Main with Branch</a>
+      <a href="#git-marge-update-branch">Marge Main with Branch</a>
+      <a href="#origin-main">Git Pull Origin Main</a>
       <a href="#branch-delete">Branch Delete</a>
     </div>
   </div>
@@ -149,52 +150,52 @@ git config --global --list
                 </figure>
             </div>
 <!-- Git Check out -->
-            <div id="git-check-out" class="card-column">
-                <figure class="card code-card">
-                <h2 class="card-header">Git Checkout</h2>
-                <div class="card-body">
-                    <p>Git check out –b will allow you to create a new branch<br>
-                    Git branch will show you what branch you are currently on<br>
-                Get check out &lt;branch name&gt; will switch the branch you are on</p>
-                </div>
-                <pre class="code-block"><code>
+    <div id="git-check-out" class="card-column">
+        <figure class="card code-card">
+        <h2 class="card-header">Git Checkout</h2>
+        <div class="card-body">
+            <p>Git check out –b will allow you to create a new branch<br>
+            Git branch will show you what branch you are currently on<br>
+        Get check out &lt;branch name&gt; will switch the branch you are on</p>
+        </div>
+        <pre class="code-block"><code>
 
     git checkout -b &lt;branch-name&gt;
     git branch
     git checkout main or master
     git branch
             </code></pre>
-                </figure>
-            </div>
+        </figure>
+    </div>
 
 <!-- Git Branch Merge -->
-            <div id="git-branch-marge" class="card-column">
-                <figure class="card code-card">
-                <h2 class="card-header">Git Merge</h2>
-                <div class="card-body">
-                    <p>This will merge the branch that you select with the branch 
-                        that you were currently on</p>
-                </div>
-                <pre class="code-block"><code>
+    <div id="git-branch-marge" class="card-column">
+        <figure class="card code-card">
+        <h2 class="card-header">Git Merge</h2>
+        <div class="card-body">
+            <p>This will merge the branch that you select with the branch 
+                that you were currently on</p>
+        </div>
+        <pre class="code-block"><code>
 
     git merge &lt;branch-name&gt;
             </code></pre>
-                </figure>
-            </div>
+        </figure>
+    </div>
 
 <!-- Git Merge Update Existing Branch -->
-            <div id="git-marge-update-branch" class="card-column">
-                <figure class="card code-card">
-                <h2 class="card-header">Marge Main with Working Branch</h2>
-                <div class="card-body">
-                    <p>
-                        The steps to update your main branch and then take those updates 
-                        and put them in your work in branch.
-                        <a class="cheat-sheet" href="./assets/img/git-merge-cheat-sheet.png">
-                            Click here for the full Cheat Sheet</a>
-                    </p>
-                </div>
-                <pre class="code-block"><code>
+    <div id="git-marge-update-branch" class="card-column">
+        <figure class="card code-card">
+        <h2 class="card-header">Merge Main with Working Branch</h2>
+        <div class="card-body">
+            <p>
+                The steps to update your main branch and then take those updates 
+                and put them in your work in branch.
+                <a class="cheat-sheet" href="./assets/img/git-merge-cheat-sheet.png">
+                    Click here for the full Cheat Sheet</a>
+            </p>
+        </div>
+        <pre class="code-block"><code>
 
     git checkout main
     git pull
@@ -202,24 +203,41 @@ git config --global --list
     git merge main
     git add -A
     git commit -m "merge complete"
-                </code></pre>
-                    </figure>
-                </div>
+            </code></pre>
+        </figure>
+    </div>
+
+<!-- git pull origin main -->
+    <div id="origin-main" class="card-column">
+        <figure class="card code-card">
+        <h2 class="card-header">Git Pull Origin Main</h2>
+        <div class="card-body">
+            <p>
+
+            </p>
+        </div>
+        <pre class="code-block"><code>
+
+    git pull origin main
+    </code></pre>
+        </figure>
+    </div>
 
 <!-- Branch Delete -->
-            <div id="branch-delete" class="card-column">
-                <figure class="card code-card">
-                <h2 class="card-header">Branch Delete</h2>
-                <div class="card-body">
-                    <p>This will Delete a old branch you are no longer working within 
-                        after merging into maine</p>
-                </div>
-                <pre class="code-block"><code>
+    <div id="branch-delete" class="card-column">
+        <figure class="card code-card">
+        <h2 class="card-header">Branch Delete</h2>
+        <div class="card-body">
+            <p>This will Delete a old branch you are no longer working within 
+                after merging into maine
+            </p>
+        </div>
+        <pre class="code-block"><code>
 
     git branch -d &lt;branch-name&gt;
             </code></pre>
-                </figure>
-            </div>
+        </figure>
+    </div>
 
     </section>
   </main>
