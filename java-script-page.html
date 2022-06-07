@@ -7,18 +7,20 @@
     <title>JavaScript Cheatsheet</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="index.html">HTML</a>
-        <a href="css-page.html">CSS</a>
-        <a class="active" href="java-script-page.html">JavaScript</a>
-        <a href="git-page.html">Github</a>
-        <div class="search-bar-right">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
-        </div>
-    </div>
+     <div class="topnav" id="myTopnav">
+  <a class="active" href="index.html">HTML</a>
+      <a href="css-page.html">CSS</a>
+      <a href="java-script-page.html">JavaScript</a>
+      <a href="git-page.html">Github</a>
+       <a class="search"> <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
 
     <header>
        <h1 class="page-title">
@@ -93,6 +95,6 @@ console.log(myArr);
 
   </main>
 
-
+<script src="/assets/JS/script.js"></script>
 </body>
 </html>
